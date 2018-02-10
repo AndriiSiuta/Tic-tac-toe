@@ -55,8 +55,8 @@ eventHandler = (e) => {
 getMousePosition = (canvas, e) => {
     let rect = canvas.getBoundingClientRect();
     return {
-        x: evt.clientX - rect.left,
-        y: evt.clientY - rect.top
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top
     }
 };
 
